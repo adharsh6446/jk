@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Holidays</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #000000;
+            border-bottom: 3px solid #33cc33;
+        }
+
+        .logo {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .logo1 {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #33cc33;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(51, 204, 51, 0.5);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #33cc33;
+            color: #000000;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px rgba(51, 204, 51, 0.7);
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid #33cc33;
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            height: 250px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .booking {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #1e1e1e;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #2d2d2d;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 3px solid #33cc33;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #33cc33;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/JK Color.png" alt="JK Logo" class="logo"><br>
+        <h1>Holidays</h1>
+        <img src="images/HULK logo.png" alt="JK L ogo" class="logo1">
+
+    </header>
+
+    <section class="hero">
+        <h1>MOBILE DJ EXPERIENCE</h1>
+        <p>Ultimate Entertainment On Wheels</p>
+        <!-- <a href="#booking" class="btn">Book Now</a> -->
+    </section>
+
+    <div class="container">
+        <section class="features">
+            <h2>UNLEASH THE POWER</h2>
+            <p>Our custom-designed DJ van brings next-level entertainment to any event</p>
+            <!-- <div style="display: flex; justify-content: center; gap: 30px; margin: 30px 0;">
+                <img src="images/JK logo.png" alt="JK Logo" style="max-height: 300px;">
+                <img src="images/HULK logo.png" alt="Hulk Logo" style="max-height: 350px;">
+            </div> -->
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Professional DJ Sound System</h3>
+                    <p>Experience earth-shaking bass and crystal-clear audio with our premium sound equipment designed
+                        to deliver exceptional performance for any size crowd.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Advanced Lighting Show</h3>
+                    <p>Create the perfect atmosphere with our full spectrum of DJ lights, laser projectors, and
+                        synchronized light shows that pulse with the music.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Smoke Effects</h3>
+                    <p>Add drama and dimension to your event with our professional smoke machine effects that enhance
+                        the light show experience.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Exterior Sound System</h3>
+                    <p>Take the party outdoors with our powerful external speakers designed to project quality sound for
+                        outdoor events and gatherings.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Safe Rides with Clean Vans and Expert Drivers</h3>
+                    <p>Our drivers have many years of experience and are trained to ensure your safety, comfort, and
+                        satisfaction. We take pride in keeping our vans clean, well-maintained, and ready for every
+                        journey. Whether it’s a short trip or a long ride, you can count on us for a smooth, safe, and
+                        hygienic travel experience.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Comfortable Interior</h3>
+                    <p>Enjoy the ride with our comfortable push-back seats and well-spaced legroom, ensuring a relaxing
+                        experience for passengers and crew alike.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>THE ULTIMATE EXPERIENCE</h2>
+            <p>Our custom DJ van in all its glory</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/FrontD1.jpeg" alt="Van at Night with Lights">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FontD-new.jpeg" alt="DJ Van Exterior Front">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontN.jpeg" alt="DJ Van Exterior Side">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/InteriorN.jpeg" alt="DJ Van Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontN2.jpeg" alt="DJ Van Exterior Side">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontD-S.jpeg" alt="DJ Van Exterior Side">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Interior.jpeg" alt="DJ Van Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontN-S.jpeg" alt="DJ Van Exterior Side">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontN1.jpeg" alt="DJ Booth Setup">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/InteriorJK.jpeg" alt="Comfortable Seating">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/FrontN-S1.jpeg" alt="Sound and Light System">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Back.jpeg" alt="Interior Lighting Effects">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer style="padding: 60px 0;">
+        <div class="container">
+            <h2>CONTACT US</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Interested in our DJ van? Get in touch!</p>
+
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.3rem; margin-bottom: 10px;"><strong>Phone:</strong> 9965155115</p>
+                <!-- <p style="font-size: 1.3rem; margin-bottom: 10px;"><strong>Email:</strong> info@jkdjvan.com</p> -->
+                <p style="font-size: 1.3rem; margin-bottom: 30px;"><strong>Location:</strong> Kavindapadi, Erode, Tamil
+                    Nadu</p>
+            </div>
+
+            <div class="social-links">
+                <!-- <a href="#"><i>Facebook</i></a> -->
+                <a href="https://www.instagram.com/jk_holidays_k.v.p?igsh=ZjU4MHl1dGQxazcw"><i>Instagram</i></a>
+                <!-- <a href="#"><i>TikTok</i></a>
+                <a href="#"><i>YouTube</i></a> -->
+            </div>
+
+            <p style="margin-top: 40px;">© JK Holidays. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
